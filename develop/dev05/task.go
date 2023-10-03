@@ -1,4 +1,4 @@
-package dev05
+package main
 
 import (
 	"bufio"
@@ -181,7 +181,7 @@ func getAdjacentLines(src map[int]string, lineNumb int) map[int]string {
 	return adjacentLines
 }
 
-func grep() {
+func main() {
 	flag.Parse()
 	src, err := readInput(inputFile)
 	if err != nil {
@@ -193,7 +193,3 @@ func grep() {
 		log.Fatalln(err)
 	}
 }
-
-//func main() {
-//	grep()
-//}
